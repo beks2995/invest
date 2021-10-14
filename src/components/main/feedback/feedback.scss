@@ -1,0 +1,113 @@
+.feedback{
+  padding: 20px 0 120px;
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    /* identical to box height */
+
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+
+    /* Black */
+
+    color: #101010;
+    margin-bottom: 5px;
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height */
+
+    letter-spacing: 0.25px;
+
+    /* Grey */
+
+    color: #424249;
+    margin-bottom: 30px;
+  }
+  &-card{
+    background: #FFFFFF;
+    padding: 0 10px 25px;
+    /* rewiew */
+  }
+  &-content{
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    padding: 25px 55px 35px 25px;
+    max-height: 150px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &__userName{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+
+      color: #000000;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    &__userLetter{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+
+      /* White */
+
+      color: #FFFFFF;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+    }
+    &__text{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+
+      /* Black */
+
+      color: #101010;
+    }
+  }
+  .slick-dots li button{
+    width: 10px;
+    height: 10px;
+  }
+  .slick-dots li button:before{
+    border: 1px solid #6A64D0;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .slick-dots li.slick-active button:before{
+    background: #6A64D0;
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,102 @@
+.begin{
+  padding-top: 35px;
+  background: linear-gradient(180deg, rgba(106,100,208,1) 0%, rgba(106,100,208,1) 100%) top left/100% 405px no-repeat, #FFFFFF;
+  &__content{
+    position: relative;
+    margin-bottom: 50px;
+    .step-list{
+      display: flex;
+      list-style-type: none;
+      background: rgba(255, 255, 255, 0.46);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-sizing: border-box;
+      backdrop-filter: blur(6px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 20px;
+      .step-item{
+        border-right: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 85px 65px 39px 34px;
+        position: relative;
+        white-space: nowrap;
+        &:hover{
+          .step-item__number{
+            color: #FFC300;
+            z-index: -1;
+          }
+        }
+        &:last-child{
+          border-right: none;
+        }
+        &__number{
+          position: absolute;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 96px;
+          line-height: 139px;
+          /* identical to box height */
+
+          letter-spacing: 0.25px;
+
+          color: rgba(0, 0, 0, 0.07);
+          top: 15px;
+          left: 34px;
+          transition: 0.4s ease;
+        }
+        &__text{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 28px;
+          /* or 140% */
+
+          letter-spacing: 0.25px;
+
+          /* White */
+
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* or 122% */
+
+    letter-spacing: 0.25px;
+
+    /* White */
+
+    color: #FFFFFF;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  &__img{
+    position: absolute;
+    top: -12px;
+    right: 72px;
+  }
+  &__btn{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.25px;
+
+    /* Black */
+
+    color: #101010;
+    display: block;
+    margin: 0 auto;
+    background: #FFC300;
+    border-radius: 5px;
+    max-width: 363px;
+    padding: 11px 0;
+  }
+}

@@ -1,0 +1,34 @@
+.about{
+  padding: 113px 0 140px;
+   &__textBlock{
+     padding-top: 52px;
+   }
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    /* identical to box height */
+
+    letter-spacing: 0.25px;
+
+    /* Black */
+
+    color: #101010;
+    margin-bottom: 20px;
+  }
+  &__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+
+    letter-spacing: 0.25px;
+
+    /* Grey */
+
+    color: #424249;
+    max-width: 559px;
+  }
+}
