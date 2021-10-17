@@ -1,0 +1,131 @@
+.tariffs{
+  padding-top: 30px;
+  background: linear-gradient(180deg, #FFC300 0%, #FFC300 100%) top left/100% 340px no-repeat, #FFFFFF;
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    /* identical to box height */
+
+    letter-spacing: 0.25px;
+
+    /* Black */
+
+    color: #101010;
+    margin-bottom: 44px;
+  }
+  .tariff-card{
+    background: #FFFFFF;
+    /* rewiew */
+
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    padding: 97px 25px 27px;
+    position: relative;
+    &__top{
+      background: rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(8px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 10px;
+      position: absolute;
+      top: -14px;
+      left: 25px;
+      width: calc(100% - 50px);
+      padding: 12px 17px 11px 15px;
+    }
+    &__title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 100%;
+      /* identical to box height, or 24px */
+
+      letter-spacing: 0.25px;
+
+      /* Black */
+
+      color: #101010;
+      margin-bottom: 10px;
+    }
+    &__income{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height */
+
+        letter-spacing: 0.25px;
+
+        /* Black */
+
+        color: #101010;
+      }
+      &-percent{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: -0.75px;
+
+        /* Black */
+
+        color: #101010;
+        background: #FFC300;
+        border-radius: 5px;
+        max-width: 74px;
+        width: 100%;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &__text{
+      padding-left: 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      /* identical to box height */
+
+      letter-spacing: -0.75px;
+
+      color: #878787;
+      margin-bottom: 10px;
+      &:nth-child(4){
+        margin-bottom: 30px;
+      }
+      span{
+        color: #101010;
+      }
+    }
+    &__btn{
+      width: 100%;
+      background: #6A64D0;
+      border-radius: 5px;
+      border: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.25px;
+
+      /* White */
+
+      color: #FFFFFF;
+      padding: 11px 0;
+      cursor: pointer;
+    }
+  }
+}

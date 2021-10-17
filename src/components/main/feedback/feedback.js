@@ -14,18 +14,23 @@ export default class Feedback extends Component {
             slidesToShow: 3,
             slidesToScroll: 1
         };
-        const bg = ['#56CCF2', "#55f277", "#f2829d", "#f2d846"];
+        const usersFeedback = [
+            {userName: 'Василий Елисенко', bgColor: '#56CCF2'},
+            {userName: 'Александр Воробьев', bgColor: "#55f277"},
+            {userName: 'Кирил Александрович', bgColor: "#f2829d"},
+            {userName: 'Степан Юрьевич', bgColor: "#f2d846"},
+        ];
         return (
             <div className='feedback' id='feedback'>
                 <div className="container">
                     <h2 className="feedback__title">Отзывы</h2>
                     <h3 className="feedback__subtitle">Наших клиентов</h3>
                     <Slider {...settings}>
-                        {bg.map((bgColor) => (
+                        {usersFeedback.map((user) => (
                             <div className="feedback-card">
                                 <div className="feedback-content">
                                     <h3 className="feedback-content__userName"><span
-                                        className="feedback-content__userLetter" style={{background: bgColor}}>В</span>Василий Елисенко</h3>
+                                        className="feedback-content__userLetter" style={{background: user.bgColor}}>{user.userName[0]}</span>{user.userName}</h3>
                                     <p className='feedback-content__text'>Спасибо! С вами приятно работать! Быстро вывел
                                         средства на свой счет.</p>
                                 </div>
