@@ -1,0 +1,51 @@
+.contacts{
+  position: relative;
+  .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &__card{
+    padding: 47px 120px 47px 95px;
+    background: #6A64D0;
+    border-radius: 20px;
+    position: absolute;
+    top: 87px;
+    left: 0;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    /* identical to box height */
+
+    letter-spacing: 0.25px;
+
+    /* White */
+
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &__info{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: 0.25px;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: block;
+    &:hover{
+      color: #FFFFFF;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+}

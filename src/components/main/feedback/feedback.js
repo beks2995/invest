@@ -26,8 +26,8 @@ export default class Feedback extends Component {
                     <h2 className="feedback__title">Отзывы</h2>
                     <h3 className="feedback__subtitle">Наших клиентов</h3>
                     <Slider {...settings}>
-                        {usersFeedback.map((user) => (
-                            <div className="feedback-card">
+                        {usersFeedback.map((user, idx) => (
+                            <div className="feedback-card" key={idx}>
                                 <div className="feedback-content">
                                     <h3 className="feedback-content__userName"><span
                                         className="feedback-content__userLetter" style={{background: user.bgColor}}>{user.userName[0]}</span>{user.userName}</h3>
