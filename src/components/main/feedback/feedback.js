@@ -10,9 +10,13 @@ export default class Feedback extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 1500,
             slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true,
+            speed: 3000,
+            autoplaySpeed: 3500,
+            cssEase: "linear",
+            pauseOnHover: true
         };
         const usersFeedback = [
             {userName: 'Василий Елисенко', bgColor: '#56CCF2'},

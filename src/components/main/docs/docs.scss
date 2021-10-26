@@ -35,6 +35,9 @@
   }
   &-card{
     margin-right: 25px;
+    &__img{
+      cursor: url("./mag.png") , auto;
+    }
     &__title{
       font-style: normal;
       font-weight: 500;

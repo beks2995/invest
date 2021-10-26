@@ -23,7 +23,7 @@ const Docs = () => {
                             >
                                 <picture>
                                     <source srcSet={doc1_webp} type='image/webp'/>
-                                    <img src={doc1_png} alt=""/>
+                                    <img src={doc1_png} alt="" className='docs-card__img'/>
                                 </picture>
                             </div>
                             <div className="docs-card__title">Учет в налоговой</div>
@@ -36,7 +36,7 @@ const Docs = () => {
                             >
                                 <picture>
                                     <source srcSet={doc2_webp} type='image/webp'/>
-                                    <img src={doc2_png} alt=""/>
+                                    <img src={doc2_png} alt="" className='docs-card__img'/>
                                 </picture>
                             </div>
                             <div className="docs-card__title">Учет в налоговой</div>
@@ -49,7 +49,7 @@ const Docs = () => {
                             >
                                 <picture>
                                     <source srcSet={doc1_webp} type='image/webp'/>
-                                    <img src={doc1_png} alt=""/>
+                                    <img src={doc1_png} alt="" className='docs-card__img'/>
                                 </picture>
                             </div>
                             <div className="docs-card__title">Учет в налоговой</div>
