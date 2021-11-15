@@ -1,9 +1,20 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
+import {openLoginForm, openRegForm} from "../../../redux/reducers/popupReducer";
 import './header.scss'
 import logoPng from './logo.png'
 import logoWebp from './logo.webp'
 
 const Header = () => {
+    const dispatch = useDispatch();
+    const popupHandler = (e) => {
+        if(e.target.className.includes('sign-in')){
+            dispatch(openLoginForm())
+        }
+        if(e.target.className.includes('reg')){
+            dispatch(openRegForm())
+        }
+    };
     return (
         <div className='header'>
           <div className="container">
@@ -31,8 +42,8 @@ const Header = () => {
                       <a href="#contacts" className="menu-item">Контакты</a>
                   </div>
                   <div className="personal">
-                      <button type='button' className='sign-in'>Войти</button>
-                      <button type='button' className='reg'>Регистрация</button>
+                      <button type='button' className='sign-in' onClick={popupHandler}>Войти</button>
+                      <button type='button' className='reg' onClick={popupHandler}>Регистрация</button>
                       <button type='button' className='logged hidden'>Личный кабинет</button>
                   </div>
               </nav>

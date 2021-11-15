@@ -11,6 +11,7 @@ import Docs from "./docs";
 import Faq from "./faq";
 import Contacts from "./contacts";
 import Footer from "./footer";
+import AuthForm from "./authForm/authForm";
 
 const Main = () => {
     return (
@@ -27,6 +28,7 @@ const Main = () => {
             <Faq/>
             <Contacts/>
             <Footer/>
+            <AuthForm/>
         </>
     );
 };
